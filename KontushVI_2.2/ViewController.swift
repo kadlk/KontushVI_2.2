@@ -45,7 +45,10 @@ class ViewController: UIViewController {
     }
     
     func ChangeBackgroundColor(){
-        mainViewOutlet.backgroundColor = UIColor(red: CGFloat(redSliderOutlet.value), green: CGFloat(greenSliderOutlet.value), blue: CGFloat(blueSliderOutlet.value), alpha: 1)
+        mainViewOutlet.backgroundColor = UIColor(
+            red: CGFloat(redSliderOutlet.value),
+            green: CGFloat(greenSliderOutlet.value),
+            blue: CGFloat(blueSliderOutlet.value), alpha: 1)
     }
 }
 
