@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet var mainViewOutlet: UIView!
     @IBOutlet var redSliderOutlet: UISlider!
     @IBOutlet var greenSliderOutlet: UISlider!
@@ -19,7 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet var greenLable: UILabel!
     @IBOutlet var blueLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,23 +25,26 @@ class ViewController: UIViewController {
         greenSliderOutlet.minimumTrackTintColor = .green
         blueSliderOutlet.minimumTrackTintColor = .blue
         mainViewOutlet.backgroundColor = .black
+        
+        mainViewOutlet.layer.cornerRadius = 20
     }
 
     @IBAction func redSliderAction() {
         redLabel.text = String(format:"%.2f", redSliderOutlet.value)
-        
-        mainViewOutlet.backgroundColor = UIColor(red: CGFloat(redSliderOutlet.value), green: CGFloat(greenSliderOutlet.value), blue: CGFloat(blueSliderOutlet.value), alpha: 1)
+        ChangeBackgroundColor()
     }
     
     @IBAction func greenSliderAction() {
         greenLable.text = String(format:"%.2f", greenSliderOutlet.value)
-        
-        mainViewOutlet.backgroundColor = UIColor(red: CGFloat(redSliderOutlet.value), green: CGFloat(greenSliderOutlet.value), blue: CGFloat(blueSliderOutlet.value), alpha: 1)
+        ChangeBackgroundColor()
     }
     
     @IBAction func blueSliderAction() {
         blueLabel.text = String(format:"%.2f", blueSliderOutlet.value)
-        
+        ChangeBackgroundColor()
+    }
+    
+    func ChangeBackgroundColor(){
         mainViewOutlet.backgroundColor = UIColor(red: CGFloat(redSliderOutlet.value), green: CGFloat(greenSliderOutlet.value), blue: CGFloat(blueSliderOutlet.value), alpha: 1)
     }
 }
