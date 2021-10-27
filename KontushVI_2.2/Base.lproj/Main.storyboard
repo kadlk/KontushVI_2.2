@@ -74,19 +74,19 @@
                                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LeU-Br-R24" userLabel="Red Horizontal Slider">
                                                 <rect key="frame" x="-2" y="0.0" width="219.5" height="31"/>
                                                 <connections>
-                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="r6V-Cp-KXi"/>
+                                                    <action selector="redAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="tzS-NK-VK0"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IH1-d7-qUR" userLabel="Green Horizontal Slider">
                                                 <rect key="frame" x="-2" y="50" width="219.5" height="31"/>
                                                 <connections>
-                                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="SPk-8B-yii"/>
+                                                    <action selector="redAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="aBg-Qc-X5G"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ROP-J4-Nk4" userLabel="Blue Horizontal Slider">
                                                 <rect key="frame" x="-2" y="100" width="219.5" height="31"/>
                                                 <connections>
-                                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="VAF-ej-TUS"/>
+                                                    <action selector="redAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fz5-lj-rCg"/>
                                                 </connections>
                                             </slider>
                                         </subviews>

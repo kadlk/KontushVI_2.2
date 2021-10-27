@@ -29,26 +29,13 @@ class ViewController: UIViewController {
         mainViewOutlet.layer.cornerRadius = 20
     }
 
-    @IBAction func redSliderAction() {
-        redLabel.text = String(format:"%.2f", redSliderOutlet.value)
-        ChangeBackgroundColor()
-    }
-    
-    @IBAction func greenSliderAction() {
-        greenLable.text = String(format:"%.2f", greenSliderOutlet.value)
-        ChangeBackgroundColor()
-    }
-    
-    @IBAction func blueSliderAction() {
-        blueLabel.text = String(format:"%.2f", blueSliderOutlet.value)
-        ChangeBackgroundColor()
-    }
-    
-    func ChangeBackgroundColor(){
+    @IBAction func redAction(_ sender: Any) {
         mainViewOutlet.backgroundColor = UIColor(
-            red: CGFloat(redSliderOutlet.value),
-            green: CGFloat(greenSliderOutlet.value),
-            blue: CGFloat(blueSliderOutlet.value), alpha: 1)
+                    red: CGFloat(redSliderOutlet.value),
+                    green: CGFloat(greenSliderOutlet.value),
+                    blue: CGFloat(blueSliderOutlet.value), alpha: 1)
     }
+    
+    
 }
 
